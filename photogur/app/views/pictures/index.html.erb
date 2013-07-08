@@ -7,5 +7,6 @@
 
 <% @pictures.each do |picture| %>
 	<p class="caption"><%= picture[:title] %>, <%= picture[:artist] %></p>
-	<%= link_to image_tag(picture.url), "/picture/#{picture.id}", :class => "picture" %>
+	<%= link_to image_tag(picture.url), "/pictures/#{picture.id}", :class => "picture" %>
 <% end %>
+
