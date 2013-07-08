@@ -1,6 +1,6 @@
 <%= stylesheet_link_tag "style.css" %>
 
-<p><%= link_to "Back to Pictures", pictures_url %></p>
+<p><%= link_to "Back to Pictures", pictures_url %> | <%= link_to "Edit", edit_picture_path(@picture) %></p>
 
 <p class="caption"><%= @picture[:title] %>, <%= @picture[:artist] %></p>
 <img class="picture" src="<%= @picture[:url] %>">

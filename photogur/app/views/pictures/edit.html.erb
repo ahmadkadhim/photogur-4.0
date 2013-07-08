@@ -1,20 +1,23 @@
 <%= stylesheet_link_tag "style.css" %>
 
-<h1>Add a picture</h1>
-<p><%= link_to "Back to Pictures", pictures_url %></p>
+<h1>Edit Picture</h1>
+
+<p><%= link_to "Back", @picture %></p>
 
 <%= form_for @picture do |f| %>
 	<p>
 		<%= f.label "Artist" %><br>
 		<%= f.text_field "artist" %>
 	</p>
-	<p> <%= f.label "Title" %><br>
+	<p>
+		<%= f.label "Title" %><br>
 		<%= f.text_field "title" %>
 	</p>
-	<p> <%= f.label "URL" %><br>
+	<p>
+		<%= f.label "URL" %><br>
 		<%= f.text_field "url" %>
 	</p>
 	<p>
-		<%= f.submit "Save" %>
+		<%= submit_tag "Save" %>
 	</p>
 <% end %>
