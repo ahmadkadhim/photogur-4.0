@@ -1,0 +1,8 @@
+<%= stylesheet_link_tag "style.css" %>
+
+<h1>Photogur</h1>
+
+<% @pictures.each do |picture| %>
+	<p class="caption"><%= picture[:title] %>, <%= picture[:artist] %></p>
+	<img class="picture" src="<%= picture[:url] %>">
+<% end %>

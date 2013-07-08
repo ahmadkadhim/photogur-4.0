@@ -1,0 +1,28 @@
+
+h1, p {
+	text-align: center;
+	font-family: "Futura", "Helvetica", "Arial", sans-serif;
+}
+
+h1 {
+	margin: 70px 0;
+	font-size: 2.4em;
+}
+
+p {
+	font-size: 1.2em;
+
+	margin: 45px auto 15px auto;
+}
+
+
+.picture {
+	width: 700px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 10px;
+}
+
+.picture:last-child {
+	margin-bottom: 50px;
+}
